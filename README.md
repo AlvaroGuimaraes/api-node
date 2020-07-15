@@ -1,9 +1,17 @@
 # api-node
-API com cruds básicos e TDD utilizando JEST
-
 NodeJs, Express, MongoDB, JEST
 
+# Endpoints
+- método POST para cadastrar uma loja
+- método PUT para editar uma loja através do ID
+- método DELETE para deletar uma loja através do ID
+- método GET para pegar as informações de uma loja através do ID
+- método GET para listar todas as lojas ou filtrar (por estado/cidade)
+- deve ser possível listar todas as lojas cadastradas, todas de um estado e todas de um conjunto estado/cidade
+
 ## COMMANDS
+- npm start: Inicia a API
+- npm test: Executa os testes unitários
 
 ### Start docker
 
