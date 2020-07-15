@@ -4,8 +4,8 @@ const { TestScheduler } = require("jest");
 
 const lojaMock = {
   id: "5f0de6fc3c1bd80cbc25cf30",
-  name: "Loja H",
-  address: "Rua teste, 1234",
+  name: "Loja J",
+  address: "Rua teste, 1234567",
   phone: "(00) 3333-3333",
   cnpj: "00.000.000/0000-03",
   workingHour: "Diariamente das 11hs às 23hs",
@@ -25,32 +25,32 @@ beforeAll(async () => {
 });
 
 describe("Iniciando testes: ", () => {
-  test("Acessa a rota para trazer todas as lojas", async () => {
+  test("Carregar todas as lojas", async () => {
     const response = await request(server).get("/api/loja");
     expect(response.status).toEqual(200);
   });
 
-  test("Acessa a rota para trazer loja por ID", async () => {
+  test("Carregar loja por ID", async () => {
     const response = await request(server).get(`/api/loja/${id}`);
     expect(response.status).toEqual(200);
   });
 
-  test("Acessa a rota para salvar loja", async () => {
+  test("Salvar loja", async () => {
     const response = await request(server).post("/api/loja").send(lojaMock);
     expect(response.status).toEqual(201);
   });
 
-  test("Acessa a rota para atualizar loja", async () => {
+  test("Atualizar loja", async () => {
     const response = await request(server).put("/api/loja").send(lojaMock);
     expect(response.status).toEqual(200);
   });
 
-  test("Acessa a rota para excluir loja", async () => {
+  test("Excluir loja", async () => {
     const response = await request(server).delete(`/api/loja/${id}`);
     expect(response.status).toEqual(200);
   });
 
-  test("Acessa a rota para trazer lojas por cidade/estado", async () => {
+  test("Carregar lojas por cidade/estado", async () => {
     const response = await request(server).get(`/api/loja`).send(cityState);
     expect(response.status).toEqual(200);
   });
