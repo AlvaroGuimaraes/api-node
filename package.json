@@ -8,7 +8,7 @@
     "test": "jest"
   },
   "keywords": [],
-  "author": "",
+  "author": "Alvaro Neto <alvarojguimaraes@hotmail.com>",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
