@@ -10,7 +10,7 @@ NodeJs, Express, MongoDB, JEST
 - deve ser possível listar todas as lojas cadastradas, todas de um estado e todas de um conjunto estado/cidade
 
 ## OBJETO LOJA
-- Um exemplo da estrura da loja pode ser visto em: https://github.com/AlvaroGuimaraes/api-node/blob/master/loja.md
+- Um exemplo da estrura da loja pode ser visto em: https://github.com/AlvaroGuimaraes/api-node/blob/master/lojas.md
 
 ## COMMANDS
 - npm start: Inicia a API
