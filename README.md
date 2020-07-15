@@ -9,6 +9,9 @@ NodeJs, Express, MongoDB, JEST
 - método GET para listar todas as lojas ou filtrar (por estado/cidade)
 - deve ser possível listar todas as lojas cadastradas, todas de um estado e todas de um conjunto estado/cidade
 
+## OBJETO LOJA
+- Um exemplo da estrura da loja pode ser visto em: https://github.com/AlvaroGuimaraes/api-node/blob/master/README.md
+
 ## COMMANDS
 - npm start: Inicia a API
 - npm test: Executa os testes unitários
